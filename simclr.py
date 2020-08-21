@@ -218,6 +218,7 @@ class SimCLR(object):
                 # xis['H'] = xis['H'].to(self.device)
                 # xjs['H'] = xjs['H'].to(self.device)
 
+                # NOTE: this is the only change in the algorithm (follow from here)
                 loss = self._step_with_patches(model, xis, xjs, n_iter)
                 #loss = self._step(model, xis, xjs, n_iter)
 
